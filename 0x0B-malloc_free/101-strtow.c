@@ -40,7 +40,7 @@ int count_words(char *str)
 		if (*(str + index) != ' ')
 		{
 			words++;
-			index += word len(str + index);
+			index += words len(str + index);
 		}
 	}
 
@@ -78,7 +78,7 @@ char **strtow(char *str)
 
 		if (strings[w] == NULL)
 		{
-			for (w >= 0; w--)
+			for (; w >= 0; w--)
 				free(strings[w]);
 
 			free(strings);
